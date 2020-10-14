@@ -37,9 +37,7 @@ namespace Lab1_V2
             {
                 sum += item.Complex.Real;
             }
-
             double average = sum / dataItems.Count;
-
             foreach (DataItem item in dataItems)
             {
                 if (Math.Abs(item.Complex.Real - average) < eps)
@@ -47,7 +45,6 @@ namespace Lab1_V2
                     count++;
                 }
             }
-
             Complex[] ret = new Complex[count];
             count = 0;
             foreach (DataItem item in dataItems)
@@ -57,7 +54,6 @@ namespace Lab1_V2
                     ret[count++] = item.Complex;
                 }
             }
-
             return ret;
         }
 
@@ -73,7 +69,6 @@ namespace Lab1_V2
             {
                 ret += item.ToString();
             }
-
             return $"Type: V2DataCollection Info: { Info } Freq: { Freq.ToString() } Count: { dataItems.Count.ToString() } \n{ ret }";
         }
     }

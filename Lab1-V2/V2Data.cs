@@ -19,12 +19,12 @@ namespace Lab1_V2
         }
 
         public abstract Complex[] NearAverage(float eps);
+
         public abstract string ToLongString();
 
         public override string ToString()
         {
             return $"Info: { Info } Frequency: { Freq.ToString() }";
         }
-
     }
 }

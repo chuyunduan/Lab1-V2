@@ -43,17 +43,15 @@ namespace Lab1_V2
             v2Datas = new List<V2Data>();
             V2DataOnGrid[] mag = new V2DataOnGrid[3];
             V2DataCollection[] collections = new V2DataCollection[3];
-
             for (int i = 0; i < 3; i++)
             {
                 mag[i] = new V2DataOnGrid("Data " + i.ToString(), i, Ox, Oy);
                 collections[i] = new V2DataCollection("Collection number:  " + i.ToString(), i);
             }
-
             for (int i = 0; i < 3; i++)
             {
                 mag[i].initRandom(0, 100);
-                collections[i].initRandom(4, 100, 100, 0, 100);
+                collections[i].initRandom(4, 10, 10, 0, 100);
                 v2Datas.Add(mag[i]);
                 v2Datas.Add(collections[i]);
             }

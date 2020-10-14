@@ -60,7 +60,6 @@ namespace Lab1_V2
                     sum += Node[i, j].Real;
                 }
             }
-
             double average = sum / num;
             int count = 0;
             for (int i = 0; i < Grids[0].Count; i++)
@@ -73,7 +72,6 @@ namespace Lab1_V2
                     }
                 }
             }
-
             Complex[] ret = new Complex[count];
             count = 0;
             for (int i = 0; i < Grids[0].Count; i++)
@@ -86,7 +84,6 @@ namespace Lab1_V2
                     }
                 }
             }
-
             return ret;
         }
 
