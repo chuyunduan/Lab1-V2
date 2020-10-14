@@ -31,16 +31,14 @@ namespace Lab1_V2
             int count = 1;
             foreach (V2Data item in mainCollection)
             {
-                Console.WriteLine("item " + count.ToString());
+                Console.WriteLine("item " + count++.ToString());
                 item.ToLongString();
-
                 e = item.NearAverage(eps);
                 Console.WriteLine($"average eps = { ++eps }");
                 for (int i = 0; i < e.Length; i++)
                 {
                     Console.WriteLine(e[i].ToString());
                 }
-                count++;
             }
         }
     }
