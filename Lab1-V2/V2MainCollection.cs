@@ -45,8 +45,10 @@ namespace Lab1_V2
             V2DataCollection[] collections = new V2DataCollection[3];
             for (int i = 0; i < 3; i++)
             {
-                mag[i] = new V2DataOnGrid("Data " + i.ToString(), i, Ox, Oy);
-                collections[i] = new V2DataCollection("Collection number:  " + i.ToString(), i);
+                mag[i] = new V2DataOnGrid("Data", 123, Ox, Oy);
+                collections[i] = new V2DataCollection("Data", 123);
+                //mag[i] = new V2DataOnGrid("Data " + i.ToString(), i, Ox, Oy);
+                //collections[i] = new V2DataCollection("Collection number:  " + i.ToString(), i);
             }
             for (int i = 0; i < 3; i++)
             {

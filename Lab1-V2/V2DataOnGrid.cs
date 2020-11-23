@@ -44,7 +44,6 @@ namespace Lab1_V2
                     ret.dataItems.Add(new DataItem(new Vector2((i + 1) * val.Grids[0].Step, (j + 1) * val.Grids[1].Step), val.Node[i, j]));
                 }
             }
-
             return ret;
         }
 

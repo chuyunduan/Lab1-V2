@@ -40,6 +40,9 @@ namespace Lab1_V2
                     Console.WriteLine(e[i].ToString());
                 }
             }
+            Console.WriteLine("=====\n");
+            mainCollection.Remove("Data", 123);
+            Console.WriteLine(mainCollection.ToString());
         }
     }
 }
