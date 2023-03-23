@@ -7,12 +7,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Numerics;
 
+/*
+测试git
+陈师傅的代码
+*/
 
 namespace Lab1_V2
 {
     struct DataItem
     {
-        public Vector2 Vector { get; set;}
+        public Vector2 Vector { get1; set;}
         public Complex Complex { get; set; }
 
         public DataItem(Vector2 vector, Complex complex)
