@@ -12,6 +12,11 @@ using System.Numerics;
 陈师傅的代码
 */
 
+/*
+第二次测试
+*/
+
+
 namespace Lab1_V2
 {
     struct DataItem
